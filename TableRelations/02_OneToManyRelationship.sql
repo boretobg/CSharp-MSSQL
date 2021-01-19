@@ -1,0 +1,16 @@
+CREATE TABLE Models
+(
+	ModelID INT IDENTITY PRIMARY KEY,
+	Name NVARCHAR(50) NOT NULL,
+	ManufacturerID INT NOT NULL
+)
+
+CREATE TABLE Manufacturers
+(
+	ManufacturerID INT IDENTITY PRIMARY KEY,
+	Name NVARCHAR(50) NOT NULL,
+	EstablishedOn DATE NOT NULL
+)
+
+ALTER TABLE Models
+	ADD FOREIGN KEY (ManufacturerID) REFERENCES Manufacturers(ManufacturerID);
