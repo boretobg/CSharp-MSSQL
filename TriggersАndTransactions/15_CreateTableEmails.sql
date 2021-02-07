@@ -1,9 +1,9 @@
 
 /*	2.Create Table Emails
-  Create another table – NotificationEmails(Id, Recipient, Subject, Body). Add a trigger to logs table and create new email whenever new record is inserted in logs table. The following data is required to be filled for each email:
-		•	Recipient – AccountId
-		•	Subject – "Balance change for account: {AccountId}"
-		•	Body - "On {date} your balance was changed from {old} to {new}."*/
+  Create another table â€“ NotificationEmails(Id, Recipient, Subject, Body). Add a trigger to logs table and create new email whenever new record is inserted in logs table. The following data is required to be filled for each email:
+		â€¢	Recipient â€“ AccountId
+		â€¢	Subject â€“ "Balance change for account: {AccountId}"
+		â€¢	Body - "On {date} your balance was changed from {old} to {new}."*/
 
 CREATE TRIGGER tr_AddNewEmailAfterNewRecord
 ON Logs FOR INSERT
