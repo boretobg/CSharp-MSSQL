@@ -23,7 +23,7 @@ CREATE TABLE Passengers
 	LastName NVARCHAR(30) NOT NULL,
 	Age INT NOT NULL,
 	Address NVARCHAR(30) NOT NULL,
-	PassportId INT NOT NULL
+	PassportId CHAR(11) NOT NULL
 )
 
 CREATE TABLE LuggageTypes
